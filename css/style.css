@@ -50,3 +50,8 @@ img {
 	height: 150px;
     width: 150px;
 }
+
+
+.mole {
+	background-image: images/sign-error-icon.png
+}
