@@ -1,44 +1,27 @@
  $(function() {
+
  	var moleZone = $(".moleZone")
-	
-	// function selectTile(tiles) {
- //    	var randomZone = Math.floor(Math.random()*tiles.length);
- //    	var zone = tiles.slice(randomZone, 1)[0];
- //    	return zone;
- //    }
 
-	
-
- 	var randomZone = Math.floor( (Math.random() * $('ul li').length) );
-	console.log(randomZone)
 
  	showMole = $(".debug").click(function() {
- 		for (var i = 0; i < 16; i++) {
-			$(".moleZone").eq(randomZone).addClass("mole")
-
-		}
-
-
-
-// 	$("li").click(function(){
-//     	$(this).removeClass("mole");
-// });
+	 	for (var i = 0; i < 50; i++) {
+	 		setTimeout(function() {
+	 			var randomZone = Math.floor( (Math.random() * $('ul li').length) );
+	 			$(".moleZone").eq(randomZone).addClass("mole");
+		 	}, 500*i)
+	 	}
 
 		$("li").click(function(){
-	    $(this).removeClass("mole");
-	});
+		    $(this).removeClass("mole");
+		    var score = parseInt($("#score").html());
+    		score+= 100;
+    		$("#score").html(score);
+		});
+
 
 
  	})
  
- 		// for (var i = 0; i < moleZone.length; i++) {
- 		// 	$(".moleZone").slideUp()
- 		// }
- 		// $(".moleZone").slideUp("slow");
-
- 		// for (var i = 0; i < moleZone.length; i++) {
- 		// 		$(moleZone[i]).slideUp(400)
- 		// }	
  
  
 
