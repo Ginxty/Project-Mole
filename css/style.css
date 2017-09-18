@@ -1,6 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
+/*    background-image: url("../images/background1.png");*/
 }
 
 body {
@@ -8,10 +9,14 @@ body {
     height: 100vh;
 }
 
+#PageTitle {
+	margin: 30px auto;
+}
+
 ul    {
     list-style-type: none;
-    width: 600px;
-    height: 600px;
+    width: 604px;
+    height: 604px;
     margin: 50px auto;
     border: 2px solid black;
     padding: 0;
@@ -29,4 +34,19 @@ li {
 
 .pageTitle {
 	text-align: center;
+}
+
+.debug {
+  margin:auto;
+  display:block;
+}
+
+
+.score {
+	font-size: 40px;
+}
+
+img {
+	height: 150px;
+    width: 150px;
 }
