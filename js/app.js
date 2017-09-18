@@ -6,7 +6,7 @@
  //    	var zone = tiles.slice(randomZone, 1)[0];
  //    	return zone;
  //    }
- 	$(".moleZone").hide()
+
 
 	
 
@@ -15,7 +15,7 @@
 
  	showMole = $(".debug").click(function() {
  		for (var i = 0; i < 16; i++) {
-			$(".moleZone").eq(randomZone).show("slow")
+			$(".moleZone").eq(randomZone).addClass("mole")
 
 		}
 
