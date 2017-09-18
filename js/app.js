@@ -7,7 +7,6 @@
  //    	return zone;
  //    }
 
-
 	
 
  	var randomZone = Math.floor( (Math.random() * $('ul li').length) );
@@ -19,6 +18,15 @@
 
 		}
 
+
+
+// 	$("li").click(function(){
+//     	$(this).removeClass("mole");
+// });
+
+		$("li").click(function(){
+	    $(this).removeClass("mole");
+	});
 
 
  	})
