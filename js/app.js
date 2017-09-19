@@ -3,7 +3,7 @@
  	var moleZone = $(".moleZone")
 
 
- 	showMole = $(".debug").click(function() {
+ 	$(".debug").click(function() {
  		timer ();
 	 	for (var i = 0; i < 999; i++) {
 	 		setTimeout(function() {
@@ -11,15 +11,27 @@
 	 			$(".moleZone").eq(randomZone).addClass("mole");
 		 	}, 500*i)
 
+	 	}
+	 	for (var i = 0; i < 999; i++) {
+	 		setTimeout(function() {
+	 			var randomZoneGood = Math.floor( (Math.random() * $('ul li').length) );
+	 			$(".moleZone").eq(randomZoneGood).addClass("good");
+		 	}, 1700*i)
 
 	 	}
 
-		$("ul").on("click", ".mole", function(event){
-			$(event.target).removeClass("mole");
-		    var score = parseInt($("#score").html());
-    		score+= 150;
-    		$("#score").html(score);
-		})
+	$("ul").on("click", ".mole", function(event){
+		$(event.target).removeClass("mole");
+	    var score = parseInt($("#score").html());
+		score+= 150;
+		$("#score").html(score);
+		
+	$("ul").on("click", ".mole", function(event){
+		$(event.target).removeClass("mole");
+	    var score = parseInt($("#score").html());
+		score+= 150;
+		$("#score").html(score);
+	})
 
  	})
  	
@@ -28,7 +40,6 @@
         })
 
  	function timer () {
-    
     	var updateTimer = function() {
     	$('#timer').each(function() {
       		var count = parseInt($(this).html());
@@ -38,7 +49,7 @@
     });
   		};
 
-  setInterval(updateTimer, 1000);
+  	setInterval(updateTimer, 1000);
 };
 
 

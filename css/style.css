@@ -61,6 +61,20 @@ img {
 	background-image: url("../images/sign-error-icon.png");
 }
 
+.good {
+    background-size: contain;
+    background-image: url("../images/mark-correct-icon.svg")
+}
+
 #timer {
     font-size: 40px;
+}
+
+.debug {
+    font-size: 30px;
+}
+
+#reset {
+    font-size: 22px;
+    text-align: center;
 }
