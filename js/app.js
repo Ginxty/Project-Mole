@@ -20,20 +20,25 @@
 
 	 	}
 
-	$("ul").on("click", ".mole", function(event){
-		$(event.target).removeClass("mole");
-	    var score = parseInt($("#score").html());
-		score+= 150;
-		$("#score").html(score);
-		
-	$("ul").on("click", ".mole", function(event){
-		$(event.target).removeClass("mole");
-	    var score = parseInt($("#score").html());
-		score+= 150;
-		$("#score").html(score);
 	})
 
- 	})
+	$("ul").on("click", ".mole", function(event){
+		$(event.target).removeClass("mole");
+	    var score = parseInt($("#score").html());
+		score+= 150;
+		$("#score").html(score);
+
+	})
+
+	$("ul").on("click", ".good", function(event){
+		$(event.target).removeClass("good");
+	    var score = parseInt($("#score").html());
+		score+= -300;
+		$("#score").html(score);
+
+	})
+	
+ 	
  	
  	$("#reset").click(function(){
             document.location.reload(true);
