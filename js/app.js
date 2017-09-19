@@ -11,12 +11,16 @@
 		 	}, 500*i)
 	 	}
 
-		$("ul").click(".mole", function(event){
+		$("ul").on("click", ".mole", function(event){
 			$(event.target).removeClass("mole");
 		    var score = parseInt($("#score").html());
     		score+= 150;
     		$("#score").html(score);
 		})
+
+		$("#reset").click(function(){
+            document.location.reload(true);
+        })
 
 
 
