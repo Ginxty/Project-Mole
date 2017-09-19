@@ -18,7 +18,7 @@
 			$(event.target).removeClass("mole");
 		    var score = parseInt($("#score").html());
     		score+= 150;
-    		$("#score").html("SCORE: " + score);
+    		$("#score").html(score);
 		})
 
  	})
@@ -27,9 +27,9 @@
             document.location.reload(true);
         })
 
- 	    function timer () {
+ 	function timer () {
     
-    var updateTimer = function() {
+    	var updateTimer = function() {
     	$('#timer').each(function() {
       		var count = parseInt($(this).html());
       	if (count !== 0) {

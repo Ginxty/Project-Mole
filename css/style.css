@@ -60,3 +60,7 @@ img {
 	background-size: contain;
 	background-image: url("../images/sign-error-icon.png");
 }
+
+#timer {
+    font-size: 40px;
+}
