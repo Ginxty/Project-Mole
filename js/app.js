@@ -13,10 +13,15 @@
 
 		$("li").click(function(){
 		    $(this).removeClass("mole");
+
+		});
+
+		$(".mole").click(function(){
 		    var score = parseInt($("#score").html());
     		score+= 100;
     		$("#score").html(score);
-		});
+
+		})
 
 
 

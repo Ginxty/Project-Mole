@@ -39,11 +39,13 @@ li {
 .debug {
   margin:auto;
   display:block;
+  margin-right: 30px;
 }
 
 
 #score {
 	font-size: 40px;
+	margin-top: 80px;
 }
 
 img {
