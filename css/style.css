@@ -1,7 +1,9 @@
 body {
     width: 100vw;
     height: 100vh;
-/*    background-image: url("../images/background1.png");*/
+/*    background-image: url("../images/background1.png");
+    opacity: 40%;
+    background-size: contain;*/
 }
 
 body {
