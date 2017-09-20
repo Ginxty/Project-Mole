@@ -14,54 +14,29 @@ It was created to showcase my skills after completing the teaching portion of th
 
 This is a simple application that displays a single page with instructions, start and reset buttons. Along with the gameboard, a timer and a scoring system. 
 
-CONTINUE HERE!!!
-
 ## Implementation
 
 The functionality has been implemented using the following features:
 
-* AngularJS 1.2, documented
-* Twitter Bootstrap 3.2
-* Javascript validated with JSHint and JSCS
-* automated CI build on code repo change
+* Sublime Text
+* Twitter Bootstrap 4
+* Javascript through Jquery
 * semantic HTML5
-* well-structured CSS built with LESS
-* responsive web development/design (no separate m-dot site)
-* page content sourced via XHR service call with JSON response (static)
-* multi-browser unit testing with Jasmine & Karma
-* grunt-driven builds to dev and prod distributions
+* HTML5 audio
+* well-structured CSS
+* minimalist design
+
 
 ### Building
 
-Fork/clone this repo, then:
+I began the process with sketches of the site, I knew I wanted a whack-a-mole type game, so I added a grid; I knew I wanted a start and reset button, with a scoring system and timer; so I added them too; with a large title at the top. It started looking like a structured site. I then broke it up into what it's skeleton would be, a 9-3 bootstrap row is what I landed on in the end.
 
-``` sh
-$ bower install && npm install
-# build the dev distribution:
-$ grunt dev
-# run the unit tests:
-$ grunt test
-# just build the docs
-$ grunt docs
-# build the prod distribution (includes clean, test & docs) :
-$ grunt prod
-```
+I started with the framework, bootstrap. I created the row with two columns and populated one with my 4x4 grid in css (a ul with 16 lis). After that I began to focus on mechanics; I needed a randomly generated number to corrispond to a location on my grid. I did this by    
 
 ### Running
 
 Set up local web servers to point to `dist/dev` and `dist/prod` for _dev_ and _prod_ distributions, respectively.
 
-## Issues
 
-The github issue system holds the issues for this project:
+## site
 
-* [all](https://github.com/mcalthrop/angular-spa-demo/issues)
-* [bugs](https://github.com/mcalthrop/angular-spa-demo/labels/bug)
-* [enhancements](https://github.com/mcalthrop/angular-spa-demo/labels/enhancement)
-* [investigate](https://github.com/mcalthrop/angular-spa-demo/labels/investigate)
-
-## Demo site
-
-[mcalthrop.github.io/angular-spa-demo/](http://mcalthrop.github.io/angular-spa-demo/)
-
-This site is kept up to date with the latest code in the codebase.
