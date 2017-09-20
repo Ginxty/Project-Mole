@@ -58,7 +58,7 @@
 
 	  	setTimeout(function (){ 
 	  		$("li").removeClass("mole good");
-	  		$("#gameOver").html("G4M3 0V3R...")
+	  		$("#gameOver").html("G4M3 0V3R")
 	    }, 30000);
 
 	};

@@ -1,7 +1,8 @@
 body {
     width: 100vw;
     height: 100vh;
-/*  font-family: CenturyGothic;*/
+    color: #353531;
+  font-family: Courier;
 
 /*    background-image: url("../images/background1.png");
     opacity: 40%;
@@ -21,9 +22,10 @@ ul    {
     list-style-type: none;
     width: 604px;
     height: 604px;
-    margin: 50px auto;
+    margin: 0px auto;
     border: 2px solid black;
     padding: 0;
+    position: relative;
 }
 
 li {
@@ -38,6 +40,30 @@ li {
 
 .pageTitle {
 	text-align: center;
+}
+
+#circuit {
+    position: absolute;
+    left: 20px;
+    top: -15px;
+}
+
+#circuit3 {
+    position: absolute;
+    left: 1050px;
+    top: -70px;
+}
+
+#circuit2 {
+    position: absolute;
+    left: 750px;
+    top: 550px;
+}
+
+#circuit4 {
+    position: absolute;
+    left: -150px;
+    top: 400px;
 }
 
 .debug {
@@ -74,6 +100,13 @@ img {
 
 #timer {
     font-size: 40px;
+    padding-top: 0;
+}
+
+.timer {
+    margin: 10px auto;
+    padding-left: 200px;
+    font-size: 30px;
 }
 
 .debug {
@@ -98,9 +131,13 @@ img {
 }
 
 #gameOver {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #instructionsTitle {
     padding-top: 30px;
+}
+
+#instructions {
+    text-align: left;
 }
