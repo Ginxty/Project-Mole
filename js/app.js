@@ -31,6 +31,7 @@
 	})
 
 	$("ul").on("click", ".good", function(event){
+		$("#errorSound")[0].play()
 		$(event.target).removeClass("good");
 	    var score = parseInt($("#score").html());
 		score+= -300;
@@ -57,6 +58,7 @@
 	  	setInterval(updateTimer, 1000);
 
 	  	setTimeout(function (){ 
+	  		$("#shutdownSound")[0].play()
 	  		$("li").removeClass("mole good");
 	  		$("#gameOver").html("G4M3 0V3R")
 	    }, 30000);
