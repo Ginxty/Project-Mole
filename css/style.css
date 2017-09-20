@@ -84,6 +84,13 @@ img {
     text-align: center;
 }
 
+#start {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+
 #gameOver {
     font-size: 50px;
 }
