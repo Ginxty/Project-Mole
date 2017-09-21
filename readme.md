@@ -35,7 +35,9 @@ I started with the framework, bootstrap. I created the row with two columns and 
 
 I then ran into the problem of, if the 'mole show' function runs a finite amount of times, the the score, theoretically, will be the same each time a player runs the game. to solve this I settled on a timer system countdown, so the player can see how much time they have, to increase 'gameyness'. this was created using a timeout function that then removes all the tiles after 30 seconds and shows 'game over' on the screen.
 
-after this I started adding extra features, I reused my 'mole' code and scoring code to create 'good moles' that deduct points if hit. I also left them to stay on the scree nrather that timing them out; it actually added to the experiecne a bit more, making the game harder over time, by reducting the area you can click without deducting points.
+after this I started adding extra features, I reused my 'mole' code and scoring code to create 'good moles' that deduct points if hit. I also left them to stay on the scree nrather that timing them out; it actually added to the experiecne a bit more, making the game harder over time, by reducting the area you can click without deducting points. another feature added was sound cues. I added these through HTML, linking them through javascript to trigger when you hit a 'good mole' and when the game is over.
+
+then I began to finalise my styling, going for a monochrome pallet with a red accent on the start button. it keeps it simple and clean. I placed 4 circuit board png assets on the page to add to the techy theme of Squash-a-bug. 
 
 
 
