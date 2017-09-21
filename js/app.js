@@ -45,7 +45,7 @@
  	
  	// the mighty reset
  	$("#reset").click(function(){
-        document.location.reload(true);
+        location.reload();
     })
 
  	// my timer ticker on the page
