@@ -1,8 +1,8 @@
  $(function() {
-
+ 	// moleZone is the 'tile' on the board
  	var moleZone = $(".moleZone")
 
-
+ 	// function to start the game when the start button is clicked
  	$(".debug").one("click", function() {
  		timer ();
 	 	for (var i = 0; i < 60; i++) {
@@ -11,6 +11,7 @@
 	 			$(".moleZone").eq(randomZone).addClass("mole");
 		 	}, 500*i)
 
+	 	// for loop to pick the random tile
 	 	}
 	 	for (var i = 0; i < 12; i++) {
 	 		setTimeout(function() {
@@ -22,6 +23,7 @@
 
 	})
 
+ 	// funtion to destry a mole when it's clicked, adding points
 	$("ul").on("click", ".mole", function(event){
 		$(event.target).removeClass("mole");
 	    var score = parseInt($("#score").html());
@@ -30,6 +32,7 @@
 
 	})
 
+	// function to remove good moles when clicked, and remove points
 	$("ul").on("click", ".good", function(event){
 		$("#errorSound")[0].play()
 		$(event.target).removeClass("good");
@@ -40,11 +43,12 @@
 	})
 
  	
- 	
+ 	// the mighty reset
  	$("#reset").click(function(){
         document.location.reload(true);
     })
 
+ 	// my timer ticker on the page
  	function timer () {
     	var updateTimer = function() {
 	    	$('#timer').each(function() {
@@ -57,6 +61,7 @@
 
 	  	setInterval(updateTimer, 1000);
 
+	  	// my internal timer to clear the display after 30 seconds
 	  	setTimeout(function (){ 
 	  		$("#shutdownSound")[0].play()
 	  		$("li").removeClass("mole good");
