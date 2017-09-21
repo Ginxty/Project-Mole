@@ -43,9 +43,9 @@ then I began to finalise my styling, going for a monochrome palette with a red a
 
 ### Running
 
-only locally for now...
+running through github.io, linked to my repository.
 
 
 ## site
 
-all stored locally for now...
+https://ginxty.github.io/Project-Mole/
