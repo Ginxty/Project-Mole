@@ -37,7 +37,7 @@ I then ran into the problem of, if the 'mole show' function runs a finite amount
 
 after this I started adding extra features, I reused my 'mole' code and scoring code to create 'good moles' that deduct points if hit. I also left them to stay on the scree nrather that timing them out; it actually added to the experiecne a bit more, making the game harder over time, by reducting the area you can click without deducting points. another feature added was sound cues. I added these through HTML, linking them through javascript to trigger when you hit a 'good mole' and when the game is over.
 
-then I began to finalise my styling, going for a monochrome pallet with a red accent on the start button. it keeps it simple and clean. I placed 4 circuit board png assets on the page to add to the techy theme of Squash-a-bug. after a bit of boostrap polish, removing gutters and alignment etc, the game was done. And I'm really happy with it.
+then I began to finalise my styling, going for a monochrome palette with a red accent on the start button. it keeps it simple and clean. I placed 4 circuit board png assets on the page to add to the techy theme of Squash-a-bug. after a bit of boostrap polish, removing gutters and alignment etc, the game was done. And I'm really happy with it.
 
 
 
