@@ -3,7 +3,7 @@
  	var moleZone = $(".moleZone")
 
 
- 	$(".debug").click(function() {
+ 	$(".debug").one("click", function() {
  		timer ();
 	 	for (var i = 0; i < 60; i++) {
 	 		setTimeout(function() {
